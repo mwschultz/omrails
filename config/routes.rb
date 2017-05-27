@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :items
+  resources :houses
   resources :tweets
   ActiveAdmin.routes(self)
   devise_for :users
