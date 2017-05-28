@@ -2,7 +2,7 @@
 
   <p>
     <strong>User:</strong>
-    <%= @item.user.email %>
+    <%= @item.user.username %>
   </p>
 
   <p>
@@ -15,7 +15,7 @@
     <%= @item.url %>
   </p>
 
-  <% if @item.text? %> 
+  <% if @item.text? %>
     <p>
       <strong>Text:</strong>
       <%= @item.text %>
