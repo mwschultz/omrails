@@ -4,5 +4,7 @@ class Tweet < ApplicationRecord
   validates :content, presence: true, length: {maximum: 140}
   validates :user, presence: true
 
-  acts_as_votable 
+  acts_as_votable
+  has_attached_file :image
+    validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 end
